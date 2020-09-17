@@ -93,3 +93,4 @@ if __name__ == '__main__':
     fx.close()
     fy.close()
     print('相似度: {:.2f}' .format(similarity))
+
