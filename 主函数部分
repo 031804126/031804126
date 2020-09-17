@@ -1,26 +1,18 @@
 if __name__ == '__main__':
-    #x=r'C:\Users\123\AppData\Local\Programs\Python\Python37\sim_0.8\orig.txt'
-    #y=r'C:\Users\123\AppData\Local\Programs\Python\Python37\sim_0.8\orig_0.8_add.txt'
-    #这里是初始阶段选用了两个文件测试代码能不能跑出来
-    #从命令行输入文件路径的设置
-    x=input()
-    y=input()
-    z=input()
-    fx=open(x,'r',encoding='utf-8')
-    fy=open(y,'r',encoding='utf-8')
+    fx=open(sys.argv[1],'r',encoding='utf-8')
+    fy=open(sys.argv[2],'r',encoding='utf-8')
     content_x = fx.read()
     content_y = fy.read()
-    #文件的读取
     similarity = CosineSimilarity(content_x, content_y)
     similarity = similarity.main()
     #写入文件设置
-    g = open(r"C:\Users\123\AppData\Local\Programs\Python\Python37\result.txt",'w+')#这里我选择了w功能，每次都将结果重新写入目标文件，覆盖掉以前的数据
-    file_handle=open('result.txt',mode='w')
-    file_handle.write('相似度: {:.2f}' .format(similarity))
-    file_handle.close()
+    output = open(sys.argv[3],'w',encoding='utf-8')
+    output.write('相似度: {:.2f}' .format(similarity))
+    #print(r'C:\Users\123\AppData\Local\Programs\Python\Python37\result.txt'+':'+similarity)
     fx.close()
     fy.close()
-    print('相似度: {:.2f}' .format(similarity))
+    output.close()
+    #print('相似度: {:.2f}' .format(similarity))
 刚开始我理解错题目的意思了，以为是写一个遍历，读取sim_0.8文件，把重复率挨个计算出来然后写入目的文件并且全部输出，
 然后就开始找相关的资料，花了很多时间，而且结果也不理想，最后迫于无奈，多看几眼题目，才发现是我大意了，泪目。
 而且，测试代码的过程中出现了很多很多的错误，但是忘记记录了。。。
