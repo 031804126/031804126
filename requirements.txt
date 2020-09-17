@@ -1,0 +1,42 @@
+beautifulsoup4==4.9.1
+boto==2.49.0
+boto3==1.14.60
+botocore==1.17.60
+bs4==0.0.1
+certifi==2020.6.20
+chardet==3.0.4
+click==7.1.2
+coverage @ file:///C:/Users/123/AppData/Local/Programs/Python/Python37/coverage-5.3-cp37-cp37m-win_amd64.whl
+cycler==0.10.0
+Cython==0.29.14
+docutils==0.15.2
+Flask==1.1.2
+gensim==3.8.3
+idna==2.10
+intel-openmp==2019.0
+itsdangerous==1.1.0
+jieba==0.42.1
+Jinja2==2.11.2
+jmespath==0.10.0
+joblib==0.16.0
+kiwisolver==1.1.0
+MarkupSafe==1.1.1
+matplotlib @ file:///C:/Users/123/AppData/Local/Programs/Python/Python37/matplotlib-2.2.5-cp37-cp37m-win_amd64.whl
+mkl==2019.0
+numpy @ file:///C:/Users/123/AppData/Local/Programs/Python/Python37/numpy-1.18.5%2Bmkl-cp37-cp37m-win_amd64.whl
+opencv-python @ file:///C:/Users/123/Desktop/python/opencv_python-3.4.3.18-cp37-cp37m-win_amd64.whl
+pandas==1.1.1
+Pillow==7.2.0
+pyparsing==2.4.6
+python-dateutil==2.8.1
+pytz==2020.1
+requests==2.24.0
+s3transfer==0.3.3
+scikit-learn @ file:///C:/Users/123/AppData/Local/Programs/Python/Python37/scikit_learn-0.22.2.post1-cp37-cp37m-win_amd64.whl
+scipy @ file:///C:/Users/123/AppData/Local/Programs/Python/Python37/scipy-1.4.1-cp37-cp37m-win_amd64.whl
+six==1.14.0
+smart-open==2.1.1
+soupsieve==2.0.1
+threadpoolctl==2.1.0
+urllib3==1.25.10
+Werkzeug==1.0.1
