@@ -72,17 +72,25 @@ class CosineSimilarity(object):
      
 # 测试
 if __name__ == '__main__':
-    fx=open(sys.argv[1],'r',encoding='utf-8')
-    fy=open(sys.argv[2],'r',encoding='utf-8')
+    #x=r'C:\Users\123\AppData\Local\Programs\Python\Python37\sim_0.8\orig.txt'
+    #y=r'C:\Users\123\AppData\Local\Programs\Python\Python37\sim_0.8\orig_0.8_add.txt'
+    #输入文件路径的设置
+    x=input()
+    y=input()
+    z=input()
+    fx=open(x,'r',encoding='utf-8')
+    fy=open(y,'r',encoding='utf-8')
     content_x = fx.read()
     content_y = fy.read()
     similarity = CosineSimilarity(content_x, content_y)
     similarity = similarity.main()
     #写入文件设置
-    output = open(sys.argv[3],'w',encoding='utf-8')
-    output.write('相似度: {:.2f}' .format(similarity))
+    g = open(r"C:\Users\123\AppData\Local\Programs\Python\Python37\result.txt",'w+')
+    file_handle=open('result.txt',mode='w')
+    file_handle.write('相似度: {:.2f}' .format(similarity))
+    file_handle.close()
     #print(r'C:\Users\123\AppData\Local\Programs\Python\Python37\result.txt'+':'+similarity)
     fx.close()
     fy.close()
-    output.close()
-    #print('相似度: {:.2f}' .format(similarity))
+    print('相似度: {:.2f}' .format(similarity))
+
